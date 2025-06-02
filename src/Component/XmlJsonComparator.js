@@ -19,7 +19,7 @@ const XmlJsonComparator = () => {
         try {
             setIsLoading(true);
 
-            const response = await fetch('http://localhost:8000/api/export-issues', {
+            const response = await fetch('https://diff-xml-json.onrender.com/api/export-issues', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ const XmlJsonComparator = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('http://localhost:8000/api/compare', {
+            const response = await fetch('https://diff-xml-json.onrender.com/api/compare', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
